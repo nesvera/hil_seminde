@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"seminde_hil\stm32f1xx_hal_pwr.o"
+"seminde_hil\stm32f1xx_hal_tim.o"
+"seminde_hil\stm32f1xx_hal_dma.o"
+"seminde_hil\stm32f1xx_hal_uart.o"
+"seminde_hil\stm32f1xx_hal_cortex.o"
+"seminde_hil\stm32f1xx_hal_gpio_ex.o"
+"seminde_hil\stm32f1xx_hal_rcc_ex.o"
+"seminde_hil\stm32f1xx_hal_rcc.o"
+"seminde_hil\stm32f1xx_hal_flash_ex.o"
+"seminde_hil\stm32f1xx_hal.o"
+"seminde_hil\stm32f1xx_hal_gpio.o"
+"seminde_hil\stm32f1xx_hal_tim_ex.o"
+"seminde_hil\stm32f1xx_hal_flash.o"
+"seminde_hil\system_stm32f1xx.o"
+"seminde_hil\stm32f1xx_it.o"
+"seminde_hil\main.o"
+"seminde_hil\stm32f1xx_hal_msp.o"
+"seminde_hil\hil_lib.o"
+"seminde_hil\ert_main.o"
+"seminde_hil\sistema.o"
+"seminde_hil\sistema_data.o"
+"seminde_hil\startup_stm32f103xb.o"
+"seminde_hil\retarget_io.o"
+--library_type=microlib --strict --scatter "seminde_hil\seminde_hil.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "seminde_hil.map" -o seminde_hil\seminde_hil.axf
